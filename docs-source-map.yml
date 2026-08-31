@@ -1,0 +1,97 @@
+version: 1
+source_repository: Crush-AP-app/crush-ap-physics-v2
+source_branch: main
+initial_source_commit: fcb0f827d8d8db57addb7abd6dc58f8429fe7b3a
+policy:
+  semantic_review: required
+  generated_lessons_are_authority: false
+  public_docs_are_source_of_truth: false
+  new_topics_require_human_approval: true
+pages:
+  - page: index.mdx
+    topic: How Crush AP teaches
+    sources:
+      - docs/pedagogy/authority.md
+      - src/lib/lesson-pipeline/0-prep/contracts/presentation-law.ts
+      - docs/context/theory-of-instruction/cmc-exemplars.md
+      - docs/context/theory-of-instruction/cmc-correction-procedure.md
+      - docs/explainers/review-system.md
+  - page: pedagogy/direct-instruction.mdx
+    topic: Why Direct Instruction
+    sources:
+      - docs/pedagogy/authority.md
+      - docs/context/theory-of-instruction/di-rubric-2006.pdf
+      - docs/context/theory-of-instruction/theory-of-instruction-principles-and-applications.pdf
+      - docs/context/theory-of-instruction/cmc-exemplars.md
+      - src/lib/lesson-pipeline/0-prep/contracts/presentation-law.ts
+  - page: pedagogy/presentation.mdx
+    topic: Presentation of information
+    sources:
+      - docs/context/theory-of-instruction/di-rubric-2006.pdf
+      - src/lib/lesson-pipeline/0-prep/contracts/presentation-law.ts
+      - docs/pedagogy/pedagogy-rules.md
+      - docs/pedagogy/template-rules.md
+      - docs/explanations/explanation-standard.md
+  - page: pedagogy/examples-and-sequencing.mdx
+    topic: Examples, non-examples, and sequencing
+    sources:
+      - docs/context/theory-of-instruction/connecting-math-concepts-exemplars.pdf
+      - docs/context/theory-of-instruction/cmc-exemplars.md
+      - docs/context/theory-of-instruction/theory-of-instruction-principles-and-applications.pdf
+      - src/lib/lesson-pipeline/0-prep/contracts/presentation-law.ts
+      - docs/pedagogy/template-rules.md
+  - page: pedagogy/cmc-in-the-app.mdx
+    topic: Connecting Math Concepts in the app
+    sources:
+      - docs/context/theory-of-instruction/connecting-math-concepts-exemplars.pdf
+      - docs/context/theory-of-instruction/cmc-exemplars.md
+      - docs/context/theory-of-instruction/cmc-correction-procedure.md
+      - docs/pedagogy/template-rules.md
+      - src/lib/lesson-pipeline/0-prep/contracts/presentation-law.ts
+  - page: learning/corrections.mdx
+    topic: Correction as instruction
+    sources:
+      - docs/context/theory-of-instruction/cmc-correction-procedure.md
+      - src/lib/lesson-runtime/correction-ladder.ts
+      - src/lib/lesson-pipeline/2-adapt/correction-metadata.ts
+      - src/lib/lesson-runtime/_components/lesson-view.tsx
+      - src/lib/lesson-runtime/_actions/grade-short-answer-prompt.ts
+      - docs/requirements/seven-step-correction-design.md
+  - page: learning/mastery.mdx
+    topic: Mastery, not exposure
+    sources:
+      - docs/explainers/lessons-and-mastery.md
+      - docs/context/theory-of-instruction/cmc-exemplars.md
+      - docs/pedagogy/template-rules.md
+      - src/lib/sessions/lesson-grader.ts
+      - src/lib/lesson-runtime/_components/mastery.ts
+  - page: learning/review.mdx
+    topic: Cumulative review
+    sources:
+      - docs/explainers/review-system.md
+      - src/lib/mastery/schedule.ts
+      - src/lib/mastery/flow.ts
+      - src/lib/mastery/completion.ts
+      - src/lib/mastery/remediation.ts
+      - src/lib/review-sessions/composition.ts
+      - src/lib/review-sessions/types.ts
+  - page: product/from-principles-to-product.mdx
+    topic: From pedagogy to product
+    sources:
+      - docs/pedagogy/authority.md
+      - src/lib/lesson-pipeline/0-prep/contracts/presentation-law.ts
+      - docs/pedagogy/pedagogy-rules.md
+      - docs/pedagogy/template-rules.md
+      - docs/pedagogy/render-rules.md
+      - docs/pedagogy/program-rules.md
+      - docs/automation-roadmap.md
+  - page: reference/sources.mdx
+    topic: Sources and methodology
+    sources:
+      - docs/pedagogy/authority.md
+      - docs/context/theory-of-instruction/di-rubric-2006.pdf
+      - docs/context/theory-of-instruction/connecting-math-concepts-exemplars.pdf
+      - docs/context/theory-of-instruction/cmc-exemplars.md
+      - docs/context/theory-of-instruction/theory-of-instruction-principles-and-applications.pdf
+      - docs/context/theory-of-instruction/cmc-correction-procedure.md
+      - docs/automation-roadmap.md

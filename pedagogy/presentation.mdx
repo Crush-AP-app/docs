@@ -1,0 +1,56 @@
+---
+title: "Presentation of information"
+description: "How Crush AP controls clarity, cognitive load, case coverage, and worked-example structure."
+source_commit: "fcb0f827d8d8db57addb7abd6dc58f8429fe7b3a"
+---
+
+A lesson can contain correct physics and still teach poorly. The presentation may assume an untaught term, hide a needed value on an earlier screen, show only one narrow example, or accidentally cue the answer.
+
+Crush AP treats presentation as a design problem with explicit constraints.
+
+## Clarity and cognitive load
+
+Each screen should carry one new idea or one question. The wording stays concise, the needed givens remain visible, and math is laid out so the student can scan the reasoning instead of holding it in memory.
+
+<Check>Use only immediately necessary vocabulary.</Check>
+<Check>Rely only on knowledge already taught in the course.</Check>
+<Check>Keep one question and one defensible interpretation per frame.</Check>
+<Check>Keep the amount of new information small enough to master quickly.</Check>
+<Check>Place every value and prior result where it is needed.</Check>
+
+## Rules and examples have different jobs
+
+Some content is most efficiently taught as a short, repeatable rule. Formulas and conventions often belong here. Other content is more easily induced from a carefully chosen example set.
+
+Lesson designers declare which mode a sequence uses:
+
+| Mode | Best for | Presentation |
+| --- | --- | --- |
+| Rule first | A formula, convention, or repeatable operation | State the rule, model it, then ask the student to use it |
+| Induced examples | A pattern that examples reveal more clearly than prose | Present a controlled example set with consistent wording and little explanation |
+
+Adding a rule where examples would teach better creates extra language. Withholding a useful rule forces students to infer something that could have been stated simply.
+
+## A worked presentation has a stable order
+
+Worked teaching follows a predictable reasoning path:
+
+<Steps>
+  <Step title="Situation and givens">Establish what is happening and keep the known values visible.</Step>
+  <Step title="The want">Name the quantity or decision the problem asks for.</Step>
+  <Step title="The rule">State the relevant relationship in a form the student can reuse.</Step>
+  <Step title="The work">Show the essential reasoning and computation in scannable steps.</Step>
+  <Step title="The answer and why">Land the exact answer, then connect it to the physical reason.</Step>
+</Steps>
+
+This order also shapes corrections. A worked model is the correction played forward. A correction is a compact model replayed after a miss.
+
+## Coverage before assessment
+
+Every meaningful case in a test should be modeled in the lesson or established as a prerequisite. If a test asks students to solve for different targets, signs, or representations, the teaching must cover that case space.
+
+The reverse matters too. A lesson should not spend scarce attention on distinctions the student is never expected to use.
+
+<Warning>
+  Correct wording is not enough. Figures, answer choices, controls, and labels can also leak an answer or create a second interpretation. Presentation quality is judged across the whole screen.
+</Warning>

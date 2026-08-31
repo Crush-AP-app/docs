@@ -5,3 +5,8 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Internal documentation-maintenance files
+automation/
+scripts/
+docs-source-map.yml

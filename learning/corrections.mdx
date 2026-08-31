@@ -1,0 +1,61 @@
+---
+title: "Correction as instruction"
+description: "How Crush AP turns a missed response into a concise correction and a successful re-ask."
+source_commit: "fcb0f827d8d8db57addb7abd6dc58f8429fe7b3a"
+---
+
+A correction should make the right response clear and give the student another chance to produce it. It should not become a second lecture.
+
+Crush AP bases its core correction flow on the correction procedure in *Connecting Math Concepts*.
+
+## The core sequence
+
+<Steps>
+  <Step title="Identify the mistake">
+    The app gives one short diagnosis of what the response did wrong. It does not quote the student's answer or hide the correction inside encouragement.
+  </Step>
+  <Step title="Give the correct answer once">
+    The correct response and its essential reason appear together. The student is not required to guess again before being taught.
+  </Step>
+  <Step title="Repeat the missed task">
+    The app re-asks the task. A correct response is the evidence that the correction landed.
+  </Step>
+  <Step title="Return later when needed">
+    Important skills reappear through delayed retests and cumulative review with fresh variants.
+  </Step>
+</Steps>
+
+## Why the answer comes before the retry
+
+An unguided retry can measure persistence, but it does not necessarily teach. The CMC procedure is more direct: tell the right answer, then repeat the task that was missed.
+
+The re-ask matters as much as the answer. Without it, the student can move on after only reading the correction. With it, the learner completes the event by producing the response.
+
+<Info>
+  Reinforcement does not mean saying the same content three ways. The student's answer remains visible, the correct answer appears once, and the prompt is repeated without extra commentary.
+</Info>
+
+## Corrections arrive in useful bundles
+
+The first bundle contains the complete correction: diagnosis, answer, and why. One Next action opens the second bundle, the repeated task and its input.
+
+This keeps the answer immediate while avoiding a panel that reveals the correction and retry all at once.
+
+## The flow adapts to the response type
+
+| Surface | Correction shape |
+| --- | --- |
+| Short answer or choice | Brief diagnosis, correct answer once, then the task again |
+| Sketch | In-view diagnosis and rule, followed by a redraw |
+| Table | Repair the highlighted cells first; reveal the completed table only if repair also misses |
+| Exam-practice choice | Brief diagnosis and correct choice, followed by the existing scaffolded correction |
+
+Tables deliberately use a repair-first exception. Showing a completed table before the student repairs its cells made the interaction less useful in product testing, so that surface keeps a different order.
+
+## Support and mastery are separate
+
+Correction guarantees a path forward. It does not automatically turn the original response into evidence of independent mastery. The app keeps correction, lesson accounting, and later review as separate responsibilities.
+
+<Card title="How mastery is established" icon="badge-check" href="/learning/mastery" horizontal>
+  See how Crush AP distinguishes completing an interaction from demonstrating durable skill.
+</Card>

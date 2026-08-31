@@ -1,68 +1,47 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Crush AP Learning Design",
+  "description": "How Crush AP uses Direct Instruction, purposeful correction, mastery, and cumulative review.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#059669",
+    "light": "#10B981",
+    "dark": "#047857"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Learning design",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Overview",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "pedagogy/direct-instruction"
             ]
           },
           {
-            "group": "Customization",
+            "group": "How we teach",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "pedagogy/presentation",
+              "pedagogy/examples-and-sequencing",
+              "pedagogy/cmc-in-the-app"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "How learning holds",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "learning/corrections",
+              "learning/mastery",
+              "learning/review"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Design system",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "product/from-principles-to-product",
+              "reference/sources"
             ]
           }
         ]
@@ -71,14 +50,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Crush AP",
+          "href": "https://crushap.com",
+          "icon": "graduation-cap"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Documentation source",
+          "href": "https://github.com/Crush-AP-app/docs",
+          "icon": "github"
         }
       ]
     }
@@ -90,33 +69,28 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Learning design",
+        "href": "/"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Explore Crush AP",
+      "href": "https://crushap.com"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/Crush-AP-app/docs"
     }
   }
 }
