@@ -1,4 +1,18 @@
-# Mintlify automation setup
+# Documentation automation setup
+
+## Recommended: Codex scheduled task
+
+Mintlify's native automations require its $450 per month Pro plan. Crush AP does not need that plan for documentation maintenance.
+
+Use the Codex scheduled task in `automation/codex-daily-prompt.md` instead. It checks the mapped sources once each weekday, opens or updates a review pull request only when public claims changed, and never merges. Mintlify remains the site host and deploys documentation after an approved pull request reaches `main`.
+
+Requirements:
+
+- the Mac is powered on with the ChatGPT desktop app running at the scheduled time;
+- both repositories remain available at their current local paths;
+- GitHub CLI authentication remains valid.
+
+## Optional: Mintlify-native setup
 
 Mintlify automations require a Pro or Enterprise plan. The GitHub App must be installed on both repositories:
 
@@ -30,6 +44,7 @@ The second automation catches missed or cross-cutting changes. It should produce
 
 - Keep both automations review-only.
 - Do not grant ruleset bypass or enable automatic merge.
+- Do not upgrade Mintlify solely for this workflow. The Codex scheduled task covers it.
 - Review source conflicts with the pedagogy owner.
 - Close low-value proposals instead of weakening the prompt.
 - Rate-limit the drift audit to weekly. An earlier autonomous proposal loop in the product repository was disabled after it produced spam pull requests.
