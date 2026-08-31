@@ -1,0 +1,57 @@
+---
+title: "From pedagogy to product"
+description: "How Crush AP turns instructional principles into executable lesson and product behavior."
+source_commit: "fcb0f827d8d8db57addb7abd6dc58f8429fe7b3a"
+---
+
+A learning principle matters only if it reaches the screen a student uses. Crush AP therefore treats pedagogy as an executable design system, not a separate philosophy document.
+
+## The design chain
+
+<Steps>
+  <Step title="Start with instructional authority">
+    Human rulings, *Connecting Math Concepts*, Engelmann's theory, and the adopted Direct Instruction rubric establish the highest-level constraints.
+  </Step>
+  <Step title="Translate the principle into a contract">
+    Stable rules define presentation, lesson structure, student language, correction, and explanation quality.
+  </Step>
+  <Step title="Build the lesson and interaction">
+    Templates choose the example sequence. Runtime components control reveals, inputs, correction gates, and what stays visible.
+  </Step>
+  <Step title="Verify the result">
+    Structural checks, physics checks, visual review, and human judgment test the finished learner experience.
+  </Step>
+  <Step title="Graduate reusable lessons">
+    When review exposes a recurring defect, the team strengthens the shared contract or execution layer so future lessons inherit the fix.
+  </Step>
+</Steps>
+
+## Examples of the translation
+
+| Learning principle | Product expression |
+| --- | --- |
+| Keep memory burden low | Current givens and earlier reasoning stay visible when the next step needs them |
+| Make students respond often | Lessons use single-purpose frames with inputs throughout the teaching sequence |
+| Use minimal pairs to reveal differences | Model and test sets change one important feature and focus wording on it |
+| Correct immediately | A miss opens a concise diagnosis and answer, then the task is repeated |
+| Repeat until firm | Correction gates, delayed retests, and cumulative review require another successful production |
+| Build from prerequisites | Course order and generation context define what a lesson may assume |
+| Protect against answer memorization | Retests and review use fresh, human-reviewed variants |
+
+## Humans remain the authority
+
+AI assists with drafting, checking, and maintaining lesson content. It does not decide the pedagogy by inspecting whatever content happens to be shipped.
+
+The repository has an explicit authority order. Generated lessons are evidence of implementation, not a source of law. When sources conflict, the correct response is to surface the conflict for a human ruling.
+
+<Warning>
+  Automation is useful for carrying an approved principle across many surfaces. It is not authorized to invent a new pedagogy, silently resolve source conflicts, or merge semantic documentation changes without review.
+</Warning>
+
+## Public documentation follows the same discipline
+
+Every page on this site maps to named source files in the application repository. The documentation automation may propose an update only when one of those mapped sources changes. It opens a pull request for human review and records the source commit it used.
+
+<Card title="Sources and methodology" icon="books" href="/reference/sources" horizontal>
+  See the authority order, primary references, and documentation update policy.
+</Card>

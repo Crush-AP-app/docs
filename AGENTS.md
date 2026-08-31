@@ -1,33 +1,29 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# Crush AP documentation instructions
 
-# Documentation project instructions
+This is the public explanation layer for Crush AP learning design. It is derived from the private application repository and never becomes a pedagogy authority.
 
-## About this project
+## Source hierarchy
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+1. Direct human rulings and recorded correction history in the application repository.
+2. Connecting Math Concepts and Engelmann source material.
+3. Current pedagogy stage documents and executing contracts.
+4. Shipped lessons as evidence only.
 
-## Terminology
+Read `docs-source-map.yml` before changing any public page. Use only the mapped source files for claims on that page. If sources conflict, stop and flag the conflict. Never infer policy from generated lesson JSON.
 
-<!-- Add product-specific terms and preferred usage -->
-<!-- Example: Use "workspace" not "project", "member" not "user" -->
+## Editorial rules
 
-## Style preferences
+- Write for educators, school partners, and interested parents.
+- Explain the principle, then show how the product implements it.
+- Prefer concrete language over educational jargon.
+- Distinguish a current product behavior from an aspiration.
+- Do not expose private student data, internal credentials, unpublished lesson content, or proprietary implementation details that are not needed to explain the learning design.
+- Do not copy long passages from third-party sources. Paraphrase and cite them on the Sources page.
+- Do not use emojis or em dashes.
 
-<!-- Add any project-specific style rules below -->
+## Change policy
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
-
-## Content boundaries
-
-<!-- Define what should and shouldn't be documented -->
-<!-- Example: Don't document internal admin features -->
+- Semantic changes require a pull request and human review.
+- Keep each page's `source_commit` frontmatter current when an automation changes its claims.
+- Update `docs-source-map.yml` when adding, renaming, or deleting a public page.
+- Run `ruby scripts/validate-docs.rb` and `mint broken-links` before merging.

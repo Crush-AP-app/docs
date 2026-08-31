@@ -1,0 +1,22 @@
+name: Documentation integrity
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate navigation, source map, and internal links
+        run: ruby scripts/validate-docs.rb
+      - name: Install Mintlify CLI
+        run: npm install --global mint
+      - name: Check Mintlify links
+        run: mint broken-links

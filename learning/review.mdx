@@ -1,0 +1,51 @@
+---
+title: "Cumulative review"
+description: "How Crush AP schedules retrieval, credits prerequisite use, and reopens teaching after a confirmed gap."
+source_commit: "fcb0f827d8d8db57addb7abd6dc58f8429fe7b3a"
+---
+
+Learning something once is not the same as still knowing it near the AP exam. Crush AP carries the scheduling burden for the student and returns skills before they disappear.
+
+## Expanding intervals
+
+After a skill is established, its review schedule moves through six intervals:
+
+| Stage | Next review |
+| --- | --- |
+| 1 | 1 day |
+| 2 | 3 days |
+| 3 | 7 days |
+| 4 | 14 days |
+| 5 | 30 days |
+| 6 | 60 days |
+
+Successful retrieval advances the skill. The terminal interval remains at 60 days. Scheduling is capped near the AP exam so a review is not placed after it can help.
+
+## Review is mixed into the course path
+
+Students do not manage a backlog or decide which cards to study. The app presents short mixed review sessions as part of the next-step flow. Questions use fresh variants and retain the explanations and correction behavior of the lessons that taught them.
+
+## A harder skill can refresh its foundations
+
+The course represents prerequisites as a connected graph. Later work can provide partial evidence for the earlier skills it genuinely uses.
+
+For example, solving a friction problem also exercises free-body diagrams and Newton's second law. Enough accumulated evidence can advance a foundation without asking a redundant standalone question.
+
+This keeps review cumulative without making it needlessly long.
+
+## One miss is checked before it becomes a diagnosis
+
+A wrong review answer triggers a different variant of the same skill. If the confirmation is correct, the app treats the event as a hold rather than a confirmed gap.
+
+If both attempts miss, the gap is considered real. The lesson that owns the skill reopens, and the student returns to full teaching with fresh variants. If the difficulty points underneath that lesson, prerequisite repair can come first.
+
+<Steps>
+  <Step title="Initial review item">A correct first response advances the schedule.</Step>
+  <Step title="Confirmation variant">A first miss is checked against a fresh case.</Step>
+  <Step title="Confirmed gap">A second miss reopens the teaching that owns the skill.</Step>
+  <Step title="Re-establish and reschedule">Passing the lesson starts that skill's schedule again from the beginning.</Step>
+</Steps>
+
+## The student sees one next step
+
+The product avoids turning memory maintenance into another planning task. The learner sees the next useful action and a plain reason for it. The system carries the graph, timing, and repair logic behind the scenes.
