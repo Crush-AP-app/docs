@@ -32,6 +32,8 @@ pages:
       - docs/pedagogy/pedagogy-rules.md
       - docs/pedagogy/template-rules.md
       - docs/explanations/explanation-standard.md
+      - src/app/lesson-preview/[slug]/page.tsx
+      - src/lib/lesson-runtime/_components/lesson-view.tsx
   - page: pedagogy/examples-and-sequencing.mdx
     topic: Examples, non-examples, and sequencing
     sources:
@@ -65,6 +67,7 @@ pages:
       - docs/pedagogy/template-rules.md
       - src/lib/sessions/lesson-grader.ts
       - src/lib/lesson-runtime/_components/mastery.ts
+      - src/app/(app)/(shell)/course-home.tsx
   - page: learning/review.mdx
     topic: Cumulative review
     sources:
@@ -75,6 +78,7 @@ pages:
       - src/lib/mastery/remediation.ts
       - src/lib/review-sessions/composition.ts
       - src/lib/review-sessions/types.ts
+      - src/app/(app)/(shell)/course-home.tsx
   - page: product/from-principles-to-product.mdx
     topic: From pedagogy to product
     sources:
