@@ -23,7 +23,7 @@ Read `docs-source-map.yml` before changing any public page. Use only the mapped 
 
 ## Change policy
 
-- Semantic changes require a pull request and human review.
+- Semantic changes require a pull request. Human review is the default, but the owner-authorized daily documentation sync may merge its own pull request after the repository validator, Mintlify broken-link check, and all required GitHub checks pass, GitHub reports the pull request mergeable, and no source conflict or uncertainty remains.
 - Keep each page's `source_commit` frontmatter current when an automation changes its claims.
 - Update `docs-source-map.yml` when adding, renaming, or deleting a public page.
 - Run `ruby scripts/validate-docs.rb` and `mint broken-links` before merging.
