@@ -1,9 +1,9 @@
 version: 1
 capture_policy:
   source_repository: Crush-AP-app/crush-ap-physics-v2
-  source_commit: cc6f5305ed0d54cb14ef07cb6ff1056752c7f15a
+  source_commit: d2bfbdbe832a6ca6fafd32e8ee212cf30959505d
   captured_at: "2026-09-01"
-  verified_at: "2026-09-02"
+  verified_at: "2026-09-03"
   environment: account-free local preview routes with synthetic learner state
   privacy_status: passed
 screenshots:
@@ -11,9 +11,9 @@ screenshots:
     route: /lesson-preview/identifying-acceleration?surface=student
     alt: Crush AP teaching slide states that acceleration is a change in velocity, compares before and after images of a car, and asks whether acceleration occurred.
     caption: A short rule, a controlled visual comparison, and an immediate production check.
-    source_commit: cc6f5305ed0d54cb14ef07cb6ff1056752c7f15a
+    source_commit: d2bfbdbe832a6ca6fafd32e8ee212cf30959505d
     captured_at: "2026-08-31"
-    verified_at: "2026-09-02"
+    verified_at: "2026-09-03"
     privacy_status: passed
     sha256: ed4d3eaad1cb5f1229662d7740b22ed15c4a9bdb4d3cf3e42d8db1e819cdc2f7
     source_paths:
@@ -24,9 +24,9 @@ screenshots:
     route: /lesson-preview/identifying-acceleration?surface=student
     alt: Crush AP correction panel identifies the misconception, states the correct rule, and repeats the same acceleration question with a new response field.
     caption: The correction gives the answer and its reason before repeating the missed task.
-    source_commit: cc6f5305ed0d54cb14ef07cb6ff1056752c7f15a
+    source_commit: d2bfbdbe832a6ca6fafd32e8ee212cf30959505d
     captured_at: "2026-09-01"
-    verified_at: "2026-09-02"
+    verified_at: "2026-09-03"
     privacy_status: passed
     sha256: 44255006bbc7cc6e25cbafa27215b5d8ef22ca76e51cc396b371535d70a1b852
     source_paths:
@@ -38,9 +38,9 @@ screenshots:
     route: /lesson-preview/2d-kinematics-table?surface=student
     alt: Crush AP table correction keeps correct cells in green and gives concise guidance beside each cell that still needs repair.
     caption: Table repair preserves correct work and focuses attention on the cells that still need correction.
-    source_commit: cc6f5305ed0d54cb14ef07cb6ff1056752c7f15a
+    source_commit: d2bfbdbe832a6ca6fafd32e8ee212cf30959505d
     captured_at: "2026-08-31"
-    verified_at: "2026-09-02"
+    verified_at: "2026-09-03"
     privacy_status: passed
     sha256: 3cea081e450e6d5affd86c6663370d1a7d6f33ca539e088d2d9ae3eba2577f9b
     source_paths:
@@ -52,9 +52,9 @@ screenshots:
     route: /course-home-preview
     alt: Synthetic Crush AP course view shows completed acceleration lessons, the next available lesson, later locked lessons, and unit progress.
     caption: The course path distinguishes completed work, the next required lesson, and later locked work.
-    source_commit: cc6f5305ed0d54cb14ef07cb6ff1056752c7f15a
+    source_commit: d2bfbdbe832a6ca6fafd32e8ee212cf30959505d
     captured_at: "2026-08-31"
-    verified_at: "2026-09-02"
+    verified_at: "2026-09-03"
     privacy_status: passed
     sha256: c9da5a262f7fab40f80cf9dd6e22b1353ca93f4b8687389fc86443a7c7b7177b
     source_paths:
@@ -66,9 +66,9 @@ screenshots:
     route: /course-home-preview?action=review
     alt: Synthetic Crush AP course view shows a quick skills review as the required next step while upcoming lessons remain locked.
     caption: A due review checkpoint becomes the learner's next action and gates the next lessons.
-    source_commit: cc6f5305ed0d54cb14ef07cb6ff1056752c7f15a
+    source_commit: d2bfbdbe832a6ca6fafd32e8ee212cf30959505d
     captured_at: "2026-08-31"
-    verified_at: "2026-09-02"
+    verified_at: "2026-09-03"
     privacy_status: passed
     sha256: ab6b416dca91d48d91996312d88ce097cf6d3c35674b4c6614074e8aeba49103
     source_paths:
