@@ -23,7 +23,9 @@ On each run:
 12. Set `source_commit` on each affected page to the full current source commit, including pages reviewed and found to require no wording change. This records that the page was checked against that source state.
 13. If an affected screenshot source path changed, compare the current account-free preview route with the existing image. Recapture only when the visible state changed. Use synthetic state, exclude development controls and all personal data, update the manifest fields and checksum, and preserve its existing caption and alt text unless the visible meaning changed. A generated lesson remains evidence only, never pedagogy authority.
 14. Run `CRUSH_AP_SOURCE_ROOT="/Users/kanishkjain/Documents/code/Crush AP/crush-ap-v2" ruby scripts/validate-docs.rb` and the available Mintlify broken-link check.
-15. If content changed, create or reuse one branch named `codex/automated-docs-sync` in the documentation repository. Commit and push the validated changes, then open or update one pull request into `main`. Never merge it.
+15. If content changed, create or reuse one branch named `codex/automated-docs-sync` in the documentation repository. Commit and push the validated changes, then open or update one pull request into `main`.
 16. The pull request must list the source commit, source paths read, pages checked, semantic changes, screenshot changes, validation results, and any uncertainty. Avoid stylistic churn and duplicate pull requests.
+17. Merge the documentation pull request only when the local documentation validator and Mintlify broken-link check pass, every required GitHub check is green, GitHub reports the pull request mergeable, and there is no unresolved source conflict or uncertainty. Never bypass branch protection or merge changes outside this documentation repository. If any gate fails, leave the pull request open and report only the blocker.
+18. After a successful merge, report only a concise diff summary: the pages or screenshots changed, the substantive before-to-after change, and the pull request or merge link. If nothing changed, report only that no documentation changes were needed.
 
-Never purchase a plan, change Mintlify billing, change repository permissions, or enable automerge.
+Never purchase a plan, change Mintlify billing, or change repository permissions.
